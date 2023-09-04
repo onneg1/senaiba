@@ -1,47 +1,47 @@
 Algoritmo "semnome"
-// Disciplina   : [Linguagem e Lógica de Programação]
+// Disciplina   : [Linguagem e LÃ³gica de ProgramaÃ§Ã£o]
 // Professor   : Antonio Carlos Nicolodi
-// Descrição   : Aqui você descreve o que o programa faz! (função)
+// DescriÃ§Ã£o   : Aqui vocÃª descreve o que o programa faz! (funÃ§Ã£o)
 // Autor(a)    : Nome do(a) aluno(a)
 // Data atual  : 04/09/2023
 Var
-   // Seção de Declarações das variáveis
-   n1, n2 : real
+   // SeÃ§Ã£o de DeclaraÃ§Ãµes das variÃ¡veis
+   n1, n2, resultado : real
    op : caracter
 
 Inicio
-   // Seção de Comandos, procedimento, funções, operadores, etc...
+   // SeÃ§Ã£o de Comandos, procedimento, funÃ§Ãµes, operadores, etc...
 
-   escreval ("Qual operação você deseja realizar?")
-   escreval ("Escolha entre: + | - | * | / ")
+   escreva ("Qual operaÃ§Ã£o vocÃª deseja realizar?")
+   escreva ("Escolha entre: + | - | * | / ")
    leia (op)
    limpatela
 
-   escreval ("Qual o seu primeiro número?")
+   escreva ("Qual o seu primeiro nÃºmero?")
    leia (n1)
    limpatela
 
-   escreval ("Qual o seu segundo número?")
+   escreva ("Qual o seu segundo nÃºmero?")
    leia (n2)
    limpatela
 
    escolha op
-   caso "+"
-      op <- n1 + n2
+   caso  "+"
+      resultado <- n1 + n2
 
    caso "-"
-      op <- n1 - n2
+      resultado <- n1 - n2
 
    caso "*"
-      op <- n1 * n2
+      resultado <- n1 * n2
 
    caso "/"
-      op <- n1 / n2
+      resultado <- n1 / n2
    OUTROCASO
-      escreval ("A operação é inválida, escolha uma das quatro")
+      escreva ("A operaÃ§Ã£o Ã© invÃ¡lida, escolha uma das quatro")
    fimescolha
 
-   escreval ("O resultado da sua operação é: ", op)
+   escreval ("O resultado da sua operaÃ§Ã£o Ã©: ", resultado)
 
 
 
