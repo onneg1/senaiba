@@ -1,42 +1,41 @@
 Algoritmo "semnome"
-// Disciplina   : [Linguagem e LÛgica de ProgramaÁ„o]
+// Disciplina   : [Linguagem e L√≥gica de Programa√ß√£o]
 // Professor   : Antonio Carlos Nicolodi
-// DescriÁ„o   : Aqui vocÍ descreve o que o programa faz! (funÁ„o)
+// Descri√ß√£o   : Aqui voc√™ descreve o que o programa faz! (fun√ß√£o)
 // Autor(a)    : Nome do(a) aluno(a)
 // Data atual  : 03/09/2023
 Var
-   // SeÁ„o de DeclaraÁıes das vari·veis
+   // Se√ß√£o de Declara√ß√µes das vari√°veis
    cores: caracter
    valorfinal: real
 
 Inicio
-   // SeÁ„o de Comandos, procedimento, funÁıes, operadores, etc...
+   // Se√ß√£o de Comandos, procedimento, fun√ß√µes, operadores, etc...
 
    escreval ("SEJA BEM VINDO!")
    escreval ("---------------")
    escreval ("Qual foi a cor do seu CD?")
-   escreval ("CORES DISPONÕVEIS:")
+   escreval ("CORES DISPON√çVEIS:")
    escreval ("Verde | Azul | Amarelo | Vermelho")
    leia (cores)
 
-   se (cores = Verde) ou (cores = verde) entao
+   se (cores = "Verde") ou (cores = "verde") ou (cores = "AZUL")
       valorfinal <- 10.00
-   senao
-      se (cores = Azul) ou (cores = azul) entao
-         valorfinal <- 20.00
-      senao
-         se (cores = Amarelo) ou (cores = amarelho) entao
-            valorfinal <- 30.00
-         senao
-            se (cores = Vermelho) ou (cores = vermelho) entao
-               valorfinal <- 40.00
-               senao
-               escreval ("Essa cor n„o est· disponÌvel!")
-               escreval ("Por favor, escolha entre as quatro!")
-            fimse
-         fimse
-      fimse
    fimse
+
+   se (cores = "Azul") ou (cores = "azul") entao
+      valorfinal <- 20.00
+   fimse
+
+   se (cores = "Amarelo") ou (cores = "amarelo") entao
+      valorfinal <- 30.00
+   fimse
+
+   se (cores = "Vermelho") ou (cores = "vermelho") entao
+      valorfinal <- 40.00
+   fimse
+
+   escreval ("O valor a ser pago √© de R$: ", valorfinal, " R$")
 
 
 
