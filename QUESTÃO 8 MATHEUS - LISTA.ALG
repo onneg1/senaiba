@@ -19,19 +19,19 @@ Inicio
    escreval ("Verde | Azul | Amarelo | Vermelho")
    leia (cores)
 
-   se (cores = "Verde") ou (cores = "verde") ou (cores = "AZUL")
+   se (cores = "Verde") ou (cores = "verde") ou (cores = "VERDE") entao
       valorfinal <- 10.00
    fimse
 
-   se (cores = "Azul") ou (cores = "azul") entao
+   se (cores = "Azul") ou (cores = "azul") ou (cores = "AZUL") entao
       valorfinal <- 20.00
    fimse
 
-   se (cores = "Amarelo") ou (cores = "amarelo") entao
+   se (cores = "Amarelo") ou (cores = "amarelo") ou (cores = "AMARELO") entao
       valorfinal <- 30.00
    fimse
 
-   se (cores = "Vermelho") ou (cores = "vermelho") entao
+   se (cores = "Vermelho") ou (cores = "vermelho") ou (cores = "VERMELHO") entao
       valorfinal <- 40.00
    fimse
 
