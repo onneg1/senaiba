@@ -1,52 +1,50 @@
-Algoritmo "semnome"
-// Disciplina   : [Linguagem e Lógica de Programação]
+Algoritmo "semnome2"
+// Disciplina   : [Linguagem e LÃ³gica de ProgramaÃ§Ã£o]
 // Professor   : Antonio Carlos Nicolodi
-// Descrição   : Aqui você descreve o que o programa faz! (função)
+// DescriÃ§Ã£o   : Aqui vocÃª descreve o que o programa faz! (funÃ§Ã£o)
 // Autor(a)    : Nome do(a) aluno(a)
-// Data atual  : 03/09/2023
+// Data atual  : 23/08/2023
 Var
-   // Seção de Declarações das variáveis
-   operacoes: inteiro
+   // SeÃ§Ã£o de DeclaraÃ§Ãµes das variÃ¡veis
+   operacoes: caracter
    A, B, resultado : real
 
 Inicio
-   // Seção de Comandos, procedimento, funções, operadores, etc...
-   //Usuario decide qual operação, qual valor.
-   escreval ("Qual operação você deseja realizar?")
-   escreval ("Soma: + | Subtração: - | Multiplicação: * | Divisão: / ")
+   // SeÃ§Ã£o de Comandos, procedimento, funÃ§Ãµes, operadores, etc...
+   //Usuario decide qual operaÃ§Ã£o, qual valor.
+   escreval ("Qual operaÃ§Ã£o vocÃª deseja realizar?")
+   escreval ("Soma: + | SubtraÃ§Ã£o: - | MultiplicaÃ§Ã£o: * | DivisÃ£o: / ")
    leia (operacoes)
    limpatela
 
-   escreval ("Qual o primeiro número que você deseja calcular?")
+   escreval ("Qual o primeiro nÃºmero que vocÃª deseja calcular?")
    leia (A)
    limpatela
 
-   escreval ("Qual o segundo número que você deseja calcular?")
+   escreval ("Qual o segundo nÃºmero que vocÃª deseja calcular?")
    leia (B)
    limpatela
 
-   //determinar cada operação
+   //determinar cada operaÃ§Ã£o
 
    se (operacoes = "+") entao
-      resultado:= A + B
-   senao
-      se (operacoes = "-") entao
-         resultado:= A - B
-      senao
-         se (operacoes = "*") entao
-            resultado:= A * B
-         senao
-            se (operacoes = "/") entao
-               resultado:= A / B
-            fimse
-         fimse
-      fimse
+      resultado <- A + B
    fimse
-   
-   escreval ("O resultado da sua operação é: ", resultado)
+
+   se (operacoes = "-") entao
+      resultado <- A - B
+   fimse
+
+   se (operacoes = "*") entao
+      resultado <- A * B
+   fimse
+
+   se (operacoes = "/") entao
+      resultado <- A / B
+   fimse
 
 
+   escreval ("O resultado da sua operaÃ§Ã£o Ã©: ", resultado)
 
 
-
-Fimalgoritmo
+fimalgoritmo
